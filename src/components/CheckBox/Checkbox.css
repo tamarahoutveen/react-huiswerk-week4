@@ -1,0 +1,32 @@
+.error-message{
+    color: var(--button-color);
+    font-size:0.8rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.checkbox-label{
+    font-size:0.8rem;
+    font-weight: bold;
+    color: var(--header-color);
+    display: flex;
+    gap:5px;
+    cursor: pointer;
+    align-items: center;
+}
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    place-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+    background-color: var(--button-color);
+}

@@ -1,0 +1,23 @@
+.selectbox-wrapper {
+    border:none;
+}
+.selectbox-wrapper legend {
+    display: block;
+    font-size:0.8rem;
+    font-weight: bold;
+    color: var(--header-color);
+    padding: 10px 0px;
+}
+.selectbox-wrapper select {
+    width: 100%;
+    padding: 5px;
+    font-size: 0.8rem;
+    font-family: inherit;
+    background-color: #fff;
+    color: var(--font-color);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
