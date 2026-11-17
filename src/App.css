@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+:root {
+    --font-color: #1B1B1E;
+    --bg-color:#9DC7C8;
+    --button-color: #CD5334;
+    --header-color:#1D5A5B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #9DC7C8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--header-color);
+
+}
+.inner-container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+button[type="button"]{
+    background: var(--button-color);
+    color:#fff;
+    border:none;
+    padding:10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.fruit-selection .inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
