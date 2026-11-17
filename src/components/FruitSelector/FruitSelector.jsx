@@ -1,23 +1,22 @@
 import './FruitSelector.css';
+import Button from "../Button/Button.jsx";
 
 function FruitSelector({fruitLabel, fruitCount, fruitIncrease, fruitDecrease}) {
     return (
         <>
             <article className="fruit-type">
                 <span className="fruit-label">{fruitLabel}</span>
-                <button
-                    className="decrease-button"
-                    type="button"
-                    onClick={fruitDecrease}>
-                    -
-                </button>
+                <Button
+                    buttonType="button"
+                    buttonAction = {fruitDecrease}
+                    buttonLabel="-"
+                    />
                 <span className="fruitCount">{fruitCount}</span>
-                <button
-                    className="increase-button"
-                    type="button"
-                    onClick={fruitIncrease}>
-                    +
-                </button>
+                <Button
+                    buttonType="button"
+                    buttonAction = {fruitIncrease}
+                    buttonLabel="+"
+                    />
             </article>
         </>
     );
